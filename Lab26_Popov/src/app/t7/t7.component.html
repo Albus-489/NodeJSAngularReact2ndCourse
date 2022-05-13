@@ -1,0 +1,22 @@
+<div>
+    <table>
+        <tr>
+            <td colspan="3" [ngStyle]="{'color': 'lime'}">Numbers</td>
+        </tr>
+        <tr>
+            <td *ngFor="let arrnum of arrnums[0]">
+                {{arrnum}}
+            </td>
+        </tr>
+        <tr>
+            <td *ngFor="let arrnum of arrnums[1]">
+                {{arrnum}}
+            </td>
+        </tr>
+        <tr>
+            <td *ngFor="let arrnum of arrnums[2]">
+                {{arrnum}}
+            </td>
+        </tr>
+    </table>
+</div>
