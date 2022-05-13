@@ -12,4 +12,15 @@ export class T5Component implements OnInit {
   ngOnInit(): void {
   }
 
+  nameTop = ['Gregory', 'Bavr', 'Altair'];
+  nameBottom = ['Susan', 'Alex', 'Mary'];
+
+  moveName(){
+    if(this.nameBottom.length > 0){
+      let a = this.nameBottom[0];
+      this.nameTop.push(a);
+      this.nameBottom.shift();
+    }
+  }
+
 }

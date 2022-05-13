@@ -1,9 +1,31 @@
 <div class="tb">
-  <div class="names1">
+  <div class="row justify-content-around">
+
+    <div class="col-5 names">
+      <p>Список 1</p>
+      <hr>
+      <ul>
+        <li *ngFor="let item of nameTop">
+          {{item}}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-5 names">
+      <p>Список 2</p>
+      <hr>
+      <ul>
+        <li *ngFor="let item of nameBottom">
+          {{item}}
+        </li>
+      </ul>
+    </div>
 
   </div>
 
-  <div class="names2">
-
+  <br>
+  <div >
+    <button (click)="moveName()" class="btn btn-success">◄ move</button>
   </div>
+
 </div>

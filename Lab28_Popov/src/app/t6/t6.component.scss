@@ -1,0 +1,24 @@
+.tb{
+  .inpBox{
+    input{
+      margin: auto 25rem;
+      text-align: center;
+    }
+  }
+
+  .numBox{
+    border: 1px solid rgb(138, 138, 215);
+    margin: auto 40%;
+    li{
+      list-style-type:none;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  span{
+    color: lime;
+  }
+}
