@@ -1,0 +1,20 @@
+<div class="tb">
+  <div class="ourList">
+    <ul>
+      <li *ngFor="let c of countriesOrigin">
+        {{c}}
+      </li>
+    </ul>
+  </div>
+
+  <div class="bort">
+    <div class="col-3 offset-6 box">
+      <div class="form-check form-switch">
+        <input (change)="switchArr($event)" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      </div>
+    </div>
+    <div class="asd">
+      <label class="form-check-label">Показати тільки країни з <span>'p'</span></label>
+    </div>
+  </div>
+</div>
