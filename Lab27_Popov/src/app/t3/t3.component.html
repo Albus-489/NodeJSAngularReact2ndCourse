@@ -1,0 +1,14 @@
+<div class="t3b">
+  <div class="ourList">
+    <ul>
+      <li *ngFor="let c of countries">
+        {{c}}
+      </li>
+    </ul>
+  </div>
+
+  <div class="input-group mb-3 col-4 offset-4 inp">
+    <input [(ngModel)]="currentCountry" type="text" class="form-control" placeholder="Країна" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button (click)="addCountry()" class="btn btn-secondary" type="button" id="button-addon2">Додати</button>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="tb">
+  <p>Курси</p>
+  <div class="courseList">
+    <ul>
+      <li *ngFor="let course of courses | keyvalue">
+        {{course.key}} <input [checked]="course.value" [disabled]="false" type="checkbox">
+      </li>
+    </ul>
+  </div>
+</div>

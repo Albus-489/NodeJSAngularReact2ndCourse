@@ -1,0 +1,10 @@
+<div class="t2b">
+  <div class="col-4 offset-4">
+    <input onchange="numPlus" [(ngModel)]="ourNum" type="text" class="form-control" placeholder="Enter number">
+  </div>
+
+  <div class="col-4 offset-4 ">
+    <p>Квадрат: {{plusNum}}</p>
+    <button (click)="numPlus()" class="btn btn-secondary" type="button" id="button-addon2">Розрахувати</button>
+  </div>
+</div>
