@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Залежність абзацу від чекбокса</h1>
+  <mat-divider></mat-divider>
+
+  <h3 *ngIf="boxSt">Текст вже видно!</h3>
+  <mat-checkbox color="warn" (change)="box($event)" [checked]="boxSt" class="example-margin">Check me!</mat-checkbox>
+</div>
