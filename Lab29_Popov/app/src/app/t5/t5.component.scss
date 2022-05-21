@@ -1,23 +1,40 @@
 .container {
-  margin: 5rem 32rem;
+  margin: 5rem 32rem 0 32rem;
   text-align: center;
   border: 2px solid;
   background-color: #ff7a2d5a;
   border: 2px solid #ff7a2d92;
   color: #fbf1c7;
-  min-height: 156.55px;
+  min-height: 164px;
+  .btns{
+    min-height: 36px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+  button{
+    width: 10%;
+  }
+  p{
+    font-size: large;
+  }
+
+  h1{
+    color: #fabd2f;
+  }
 }
 
-h1{
-  color: #fabd2f;
+.boxbox{
+  text-align: center;
+  border: 2px solid;
+  background-color: #9144175a;
+  border: 2px solid #ff7a2d92;
+  margin: 0 32rem;
+  color: #fbf1c7;
+  .checkb{
+    margin: 4px;
+  }
 }
 
-.btns{
-  min-height: 36px;
-  margin-top: 5%;
-  margin-bottom: 2%;
-}
 
-button{
-  width: 10%;
-}
+
+

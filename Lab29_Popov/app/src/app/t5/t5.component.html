@@ -1,3 +1,16 @@
 <div class="container">
-
+  <div class="prgs">
+    <p *ngIf="boolArr[0]"> 1 текст</p>
+    <p *ngIf="boolArr[1]"> 2 текст</p>
+    <p *ngIf="boolArr[2]"> 3 текст</p>
+    <p *ngIf="boolArr[3]"> 4 текст</p>
+    <p *ngIf="boolArr[4]"> 5 текст</p>
+  </div>
+</div>
+<div class="boxbox">
+  <mat-checkbox (change)="toggleF(0)" color="primary" class="checkb">1 ряд |</mat-checkbox>
+  <mat-checkbox (change)="toggleF(1)" color="primary" class="checkb">2 ряд |</mat-checkbox>
+  <mat-checkbox (change)="toggleF(2)" color="primary" class="checkb">3 ряд |</mat-checkbox>
+  <mat-checkbox (change)="toggleF(3)" color="primary" class="checkb">4 ряд |</mat-checkbox>
+  <mat-checkbox (change)="toggleF(4)" color="primary" class="checkb">5 ряд |</mat-checkbox>
 </div>
