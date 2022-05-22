@@ -12,4 +12,18 @@ export class T10Component implements OnInit {
   ngOnInit(): void {
   }
 
+  myarr = [
+    {name: 'Україна', cities: ['Київ', 'Тернопіль', 'Львів', 'Чернівці']},
+    {name: 'Японія', cities:  ['Токіо', 'Хокайдо', 'Сайтама', 'Нагасакі']}
+  ];
+
+  ind:number = 0;
+  arr = this.myarr[this.ind].cities;
+
+  fillArr(e:any){
+    console.log(e);
+
+    this.arr = this.myarr[e].cities
+  }
+
 }

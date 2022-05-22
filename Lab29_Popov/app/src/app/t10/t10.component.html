@@ -1,1 +1,19 @@
-<p>t10 works!</p>
+<div class="container">
+  <mat-form-field appearance="outline" color="warn">
+    <mat-label>Країна</mat-label>
+    <mat-select (selectionChange)="fillArr($event.value)">
+      <mat-option *ngFor="let item of myarr; let i = index" value={{i}}>
+        {{item.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="outline" color="warn">
+    <mat-label>Міста</mat-label>
+    <mat-select>
+      <mat-option  *ngFor="let item of arr let i = index" value={{i}}>
+        {{item}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

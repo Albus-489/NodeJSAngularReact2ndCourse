@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { T1Component } from './t1/t1.component';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormsModule } from '@angular/forms';
 import { T2Component } from './t2/t2.component';
 import { T4Component } from './t4/t4.component';
 import { T5Component } from './t5/t5.component';
@@ -58,7 +58,7 @@ const routes: Routes = [
     MatDividerModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    //FormControl
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

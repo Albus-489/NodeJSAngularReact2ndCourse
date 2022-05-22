@@ -1,1 +1,11 @@
-<p>t6 works!</p>
+<div class="container">
+  <h1>Маніпуляції через ng-class</h1>
+  <mat-divider></mat-divider>
+  <div [ngClass]="{'txtclass': asd}">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.</p>
+  </div>
+
+  <div class="box">
+    <mat-checkbox (change)="check($event)" color="primary" class="checkb">Змінити колір</mat-checkbox>
+  </div>
+</div>

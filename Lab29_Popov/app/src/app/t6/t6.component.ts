@@ -12,4 +12,9 @@ export class T6Component implements OnInit {
   ngOnInit(): void {
   }
 
+  asd = false;
+  check(e:any){
+    this.asd = e.checked;
+  }
+
 }
