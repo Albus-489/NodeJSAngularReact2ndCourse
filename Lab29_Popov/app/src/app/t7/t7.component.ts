@@ -12,4 +12,18 @@ export class T7Component implements OnInit {
   ngOnInit(): void {
   }
 
+  isActive = true;
+  cl = false;
+  cr = false;
+
+  clr(e:any){
+    this.cl = e.checked;
+    console.log(e);
+
+  }
+
+  cross(e:any){
+    this.cr = e.checked;
+  }
+
 }

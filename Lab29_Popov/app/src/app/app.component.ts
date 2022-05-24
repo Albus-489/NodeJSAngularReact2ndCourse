@@ -14,4 +14,14 @@ export class AppComponent {
   rel(){
     this.selected = 'noneop'
   }
+
+  colors = ['warn', 'primary' ,'accent']
+  curentclr = 0
+  changeColor(){
+    if(this.curentclr < 2){
+      this.curentclr += 1;
+    }else{
+      this.curentclr = 0;
+    }
+  }
 }

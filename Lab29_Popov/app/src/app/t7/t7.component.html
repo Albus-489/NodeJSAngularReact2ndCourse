@@ -1,3 +1,18 @@
 <div class="container">
 
+  <div>
+    <h2>Зміна стилю за допомогою двох класів</h2>
+  </div>
+  <mat-divider></mat-divider>
+  <div [ngClass]="{'colorClass': cl}" style="margin-top: 5%;" class="txtbox">
+    <p [ngClass]="{'dressClass': cr}">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, accusamus!
+    </p>
+  </div>
+
+  <mat-divider></mat-divider>
+  <div class="box">
+    <mat-checkbox (change)="clr($event)" color="primary" class="checkb">Колір</mat-checkbox><br>
+    <mat-checkbox (change)="cross($event)" color="primary" class="checkb">Закреслення</mat-checkbox>
+  </div>
 </div>

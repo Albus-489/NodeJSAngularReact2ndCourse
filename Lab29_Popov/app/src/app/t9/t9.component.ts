@@ -11,5 +11,15 @@ export class T9Component implements OnInit {
 
   ngOnInit(): void {
   }
+  value = '';
+
+  arr = [
+    'Японія', 'Південна Корея', 'Італія', 'Австралія', 'Ісландія'
+  ]
+
+  asd(e:any){
+    console.log(e);
+    this.value = e.value
+  }
 
 }

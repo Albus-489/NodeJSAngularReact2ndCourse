@@ -6,6 +6,13 @@
   border: 2px solid #ff7a2d92;
   color: #fbf1c7;
   min-height: 164px;
+
+  .colorClass{
+    color: red;
+  }
+  .dressClass{
+    text-decoration: line-through;
+  }
   .btns{
     min-height: 36px;
     margin-top: 5%;
